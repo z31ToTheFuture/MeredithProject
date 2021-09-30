@@ -17,6 +17,7 @@ public class CommonMethods {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         driver.get(url);
+        driver.manage().window().maximize();
         driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
     }
 
